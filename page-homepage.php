@@ -12,7 +12,7 @@
 			<!-- USPS -->
 			<section id="usps" class="container">
 					<div class="row header center-xs">
-					  <div class="header-text">
+					  <div class="header-text col-xs-12">
 					    <h1>The Brilliant Customer Journey Company</h1>
 					  </div>
 					</div>
@@ -318,7 +318,7 @@
 							wp_reset_postdata();
 							if ($countwork == 0){
 					?>
-					<div class="translucent"><img src="<?php echo $figm[0]; ?>" alt="<?php the_title(); ?>"></div>
+					<div><img src="<?php echo $figm[0]; ?>" alt="<?php the_title(); ?>"></div>
 					<?php
 							} else if ($countwork == 1){
 					?>

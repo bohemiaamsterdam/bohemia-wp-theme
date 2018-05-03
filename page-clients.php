@@ -53,7 +53,7 @@
 						wp_reset_postdata();
 						if ($countwork == 0){
 				?>
-				<div class="col-xs-6 col-sm-4 col-lg-3 translucent"><img src="<?php echo $figm[0]; ?>" alt="<?php the_title(); ?>"></div>
+				<div class="col-xs-6 col-sm-4 col-lg-3"><img src="<?php echo $figm[0]; ?>" alt="<?php the_title(); ?>"></div>
 				<?php
 						} else if ($countwork == 1){
 				?>

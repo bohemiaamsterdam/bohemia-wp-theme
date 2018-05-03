@@ -2,7 +2,7 @@
 /* scss/utilities/_variables.scss */
 /* scss/utilities/_reset.scss */
 /* Eric Meyer's CSS Reset
-   http://meyerweb.com/eric/tools/css/reset/
+   http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
    This is a Sass partial
@@ -2716,12 +2716,10 @@ a {
       line-height: 1;
       padding-top: calc(8.6px + 1.29 * ( (100vw - 768px) / 432));
       padding-bottom: calc(8.6px + 1.29 * ( (100vw - 768px) / 432));
-      -ms-word-break: break-word;
-      word-break: break-word;
-      -webkit-hyphens: auto;
-      -moz-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      -webkit-hyphens: none;
+      hyphens: none;
       -webkit-transition: all, 0.3s, ease;
       -moz-transition: all, 0.3s, ease;
       -o-transition: all, 0.3s, ease;
@@ -2738,14 +2736,6 @@ a {
       @media screen and (min-width: 1200px) {
         .post-item .post-item-inner h2, .post-item .post-item-inner h3 {
           padding-bottom: 0.618125rem; } }
-      @media only screen and (min-width: 120rem) {
-        .post-item .post-item-inner h2, .post-item .post-item-inner h3 {
-          -ms-word-break: normal;
-          word-break: normal;
-          -webkit-hyphens: none;
-          -moz-hyphens: none;
-          -ms-hyphens: none;
-          hyphens: none; } }
     .post-item .post-item-inner h2 {
       font-size: 2.5rem;
       font-size: calc(40px + 40 * ( (100vw - 360px) / 2200)); }
