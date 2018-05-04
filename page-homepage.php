@@ -5,63 +5,63 @@
 <!-- 	The main content -->
 		<main>
 
-			<div class="floating-img-container">
+			<div class="floating-img-container rellax" data-rellax-speed="-4" data-rellax-percentage="0.5">
 				<img class="bg-img bg-img-usp" src="<?php bloginfo('template_directory');?>/img/hero_usp.jpg">
 			</div>
 
 			<!-- USPS -->
 			<section id="usps" class="container">
 					<div class="row header center-xs">
-					  <div class="header-text col-xs-12">
+					  <div class="header-text col-xs-12 rellax" data-rellax-speed="0">
 					    <h1>The Brilliant Customer Journey Company</h1>
 					  </div>
 					</div>
 					<div class="row">
 					  <div class="usp col-xs-6 col-sm-4">
-							<div class="row">
+							<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.7">
 								<div class="col-xs-12 col-lg-3"><img src="<?php bloginfo('template_directory');?>/img/trend_icon.svg"></div>
 								<div class="col-xs-12 col-lg-9"><h6>Op de hoogte van de trends</h6></div>
 							 </div>
 					  </div>
 					  <div class="usp col-xs-6 col-sm-4">
-							<div class="row">
+							<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.7">
 								<div class="col-xs-12 col-lg-3"><img src="<?php bloginfo('template_directory');?>/img/buyer_persona_icon.svg"></div>
 								<div class="col-xs-12 col-lg-9"><h6>98% matching Buyer Personas</h6></div>
 							 </div>
 					  </div>
 						<div class="usp col-xs-6 col-sm-4">
-							<div class="row">
+							<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.7">
 								<div class="col-xs-12 col-lg-3"><img src="<?php bloginfo('template_directory');?>/img/target_icon.svg"></div>
 								<div class="col-xs-12 col-lg-9"><h6>Spot-on in alle middelen</h6></div>
 							</div>
 						</div>
 					  <div class="usp col-xs-6 col-sm-4">
-							<div class="row">
+							<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
 								<div class="col-xs-12 col-lg-3"><img src="<?php bloginfo('template_directory');?>/img/magnet_icon.svg"></div>
 								<div class="col-xs-12 col-lg-9"><h6>Gepassioneerd over verleiden</h6></div>
 							</div>
 						</div>
 					  <div class="usp col-xs-6 col-sm-4">
-							<div class="row">
+							<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
 								<div class="col-xs-12 col-lg-3"><img src="<?php bloginfo('template_directory');?>/img/creative_icon.svg"></div>
 								<div class="col-xs-12 col-lg-9"><h6>Crazy creatief werk</h6></div>
 							</div>
 						</div>
 					  <div class="usp col-xs-6 col-sm-4">
-							<div class="row">
+							<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
 								<div class="col-xs-12 col-lg-3"><img src="<?php bloginfo('template_directory');?>/img/rocket_icon.svg"></div>
 								<div class="col-xs-12 col-lg-9"><h6>Maximale conversie door heldere structuur</h6></div>
 							</div>
 						</div>
 					</div>
 
-					<div class="row center-xs">
+					<div class="row center-xs rellax" data-rellax-speed="3" data-rellax-percentage="0.3">
 					  <a class="red-gradient-btn" href="#case-studies">Bewijs dat maar eens</a>
 					</div>
 			</section>
 
-			<div class="floating-img-container">
-				<img class="bg-img bg-img-hashtags" src="<?php bloginfo('template_directory');?>/img/hero_hashtags.jpg">
+			<div class="floating-img-container" >
+				<img class="bg-img bg-img-hashtags rellax" data-rellax-speed="-4" data-rellax-percentage="0.5" data-rellax-zindex="-1" src="<?php bloginfo('template_directory');?>/img/hero_hashtags.jpg">
 			</div>
 
 			<!-- HASHTAGS -->
@@ -70,7 +70,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="hashtags-slider">
+							<div class="hashtags-slider rellax" data-rellax-speed="2" data-rellax-percentage="0.2">
 								<div>
 									<h4>#Customer & Sales Journeys</h4>
 									<h4>#Buyer Persona Ontwikkeling</h4>
@@ -104,22 +104,22 @@
 					<div class="col-xs-12 col-md-7">
 						<h2>Ons succes begint bij jouw Customer Journey</h2>
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12 col-md-6 rellax" data-rellax-speed="0">
 						<p>Wij zorgen ervoor dat jouw doelgroep jou vindt op het moment dat die jou nodig heeft. Dat doen we door samen met jouw en je team nauwgezet jouw customer journey in kaart te brengen, te verbeteren en te zorgen voor traffic. Dat doen we onder andere succesvol voor klanten als Staatsbosbeheer, Sasma en KONE. <br> In elk niveau van de journey kunnen we je helpen met Attract, Capture en Nurture van jouw (potential) customers. Uiteraard om te komen tot een Close.</p>
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12 col-md-6 rellax" data-rellax-speed="2" data-rellax-percentage="0.2">
 						<img src="<?php bloginfo('template_directory');?>/img/sales-funnel_bohemia-asmterdam.png" alt="Sales Funnel - Bohemia Amsterdam">
 					</div>
 				</div>
 			</section>
 
 			<div class="floating-img-container">
-				<img class="bg-img bg-img-work" src="<?php bloginfo('template_directory');?>/img/hero_work.jpg">
+				<img class="bg-img bg-img-work rellax" data-rellax-speed="-4" data-rellax-percentage="0.3" src="<?php bloginfo('template_directory');?>/img/hero_work.jpg">
 			</div>
 
 			<!-- CASE STUDIES -->
-			<section id="case-studies" class="container-full">
-				<div class="skewed-bg"></div>
+			<section id="case-studies" class="container-full rellax" data-rellax-speed="0">
+				<div class="skewed-bg rellax" style="transform: skewY(-3deg);" data-rellax-speed="0"></div>
 				<div class="row">
 					<div class="col-xs-12">
 						<?php
@@ -189,18 +189,18 @@
 			</section>
 
 			<div class="floating-img-container">
-				<img class="bg-img bg-img-whitepaper" src="<?php bloginfo('template_directory');?>/img/hero_whitepaper.jpg">
+				<img class="bg-img bg-img-whitepaper rellax" data-rellax-speed="-4" data-rellax-percentage="0.3" src="<?php bloginfo('template_directory');?>/img/hero_whitepaper.jpg">
 			</div>
 
 			<!-- WHITEPAPERS -->
 			<section id="whitepapers" class="container-fluid">
-				<div class="row center-xs">
+				<div class="row center-xs rellax" data-rellax-speed="0">
 					<h2 class="col-xs-12 col-lg-6">Whitepapers & Werkboeken</h2>
 				</div>
-				<div class="row center-xs">
+				<div class="row center-xs rellax"  data-rellax-speed="0">
 					<p class="col-xs-12 col-md-6">Wil je weten hoe we de dingen aanpakken en wat je zelf kunt doen? Download dan één van onze whitepapers of werkboeken.</p>
 				</div>
-				<div class="row">
+				<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.1">
 					<div class="whitepaper whitepaper-left post-item col-md-6">
 						<img src="https://bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/whitepaper-left.jpg" alt="">
 						<span class="close">X</span>
@@ -245,7 +245,7 @@
 			<!-- TESTIMONIALS -->
 			<section id="testimonials" class="container-full">
 				<div class="skewed-bg"></div>
-				<div class="row testimonials-slider center-xs">
+				<div class="row testimonials-slider center-xs rellax" data-rellax-speed="3" data-rellax-percentage="0.1">
 					<div class="col-xs-12">
 						<div class="row center-xs">
 							<p class="col-xs-10 col-lg-8">Saksia en Emma, onze buyer persona’s, zijn echt voor ons gaan leven.</p>
@@ -290,7 +290,7 @@
 			</section>
 
 			<!-- LOGO WALL -->
-			<section id="logo-wall" class="conainter-full">
+			<section id="logo-wall" class="conainter-full rellax" data-rellax-speed="2" data-rellax-percentage="0.1">
 				<div class="row logo-wall-slider">
 					<?php
 						$temp_query = $wp_query;  // store it

@@ -3449,7 +3449,7 @@ aside form {
 
 /* scss/organisms/_home-logo-wall.scss */
 #logo-wall {
-  padding-top: calc(40px + 130 * ( (100vw - 360px) / 2200));
+  padding-top: calc(40px + 16 * ( (100vw - 360px) / 2200));
   padding-bottom: calc(40px + 130 * ( (100vw - 360px) / 2200));
   text-align: center; }
   @media screen and (max-width: 360px) {
@@ -3457,7 +3457,7 @@ aside form {
       padding-top: 2.5rem; } }
   @media screen and (min-width: 2560px) {
     #logo-wall {
-      padding-top: 10.625rem; } }
+      padding-top: 3.5rem; } }
   @media screen and (max-width: 360px) {
     #logo-wall {
       padding-bottom: 2.5rem; } }
@@ -3500,6 +3500,11 @@ aside form {
     display: block; }
   #whitepapers .post-item {
     padding: 1rem; }
+    @media only screen and (min-width: 48rem) {
+      #whitepapers .post-item {
+        margin-top: 6rem; } }
+    #whitepapers .post-item img {
+      opacity: 1; }
     #whitepapers .post-item .post-item-inner form * {
       border-color: white;
       color: white; }
@@ -3511,8 +3516,6 @@ aside form {
         height: 2rem; } }
     #whitepapers .post-item .post-item-inner input[type=submit] {
       margin: 0.75rem 0 0; }
-    #whitepapers .post-item img {
-      opacity: 1; }
   #whitepapers .close {
     position: absolute;
     z-index: 10;
