@@ -290,7 +290,7 @@
 			</section>
 
 			<!-- LOGO WALL -->
-			<section id="logo-wall" class="conainter-full rellax" data-rellax-speed="2" data-rellax-percentage="0.1">
+			<section id="logo-wall" class="conainter-full rellax" data-rellax-speed="0" data-rellax-percentage="0.1">
 				<div class="row logo-wall-slider">
 					<?php
 						$temp_query = $wp_query;  // store it
