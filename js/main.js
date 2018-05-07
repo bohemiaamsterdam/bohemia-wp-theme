@@ -42,21 +42,6 @@ function detectIE() {
   return false;
 }
 
-
-//Resize footer SVG
-window.onload = function initalSVG() {
-	"use strict";
-	var angle = window.innerWidth / 5120;
-
-  //hero variables
-  var hbl = "0 1,",
-      htl = "0 " + angle + ",",
-      htr = "1 0,",
-      hbr = "1 1";
-
-  document.querySelector("#clip-polygon-footer > polygon").setAttribute("points", hbl + htl + htr + hbr);
-};
-
 window.onresize = function changeSVG() {
 	"use strict";
 	var angle = window.innerWidth / 5120;
@@ -79,42 +64,32 @@ jQuery(document).ready(function($){
 	if ( !ifrPar.hasClass("zopim") && !ifrPar.is("body")) {
 		ifrPar.addClass("iframe-parent");
 	}
-	//$("body").removeClass("iframe-parent");
-
-});
-
-// scroll to first section
-jQuery(document).ready(function($){
-	"use strict";
-	$(".arrow").click(function() {
-		$("html,body").animate({
-			scrollTop: $(".one").offset().top},
-			"slow");
-	});
 });
 
 //Gallery masonry init
 jQuery(document).ready(function($){
 	"use strict";
-	//Add the masonry class to all but first 3
-	$(".gallery>.gallery-item:not(:first-of-type)").addClass("small-img");
-	$(".gallery>.gallery-item:first-of-type").addClass("big-img");
+	if($(".gallery").lenght) {
+		//Add the masonry class to all but first 3
+		$(".gallery>.gallery-item:not(:first-of-type)").addClass("small-img");
+		$(".gallery>.gallery-item:first-of-type").addClass("big-img");
 
-	// init Isotope
-	var $grid = $(".gallery").isotope({
-		// options
-		itemSelector: ".small-img",
-		stamp: ".big-img",
-		masonry: {
-			gutter: 30,
-			transitionDuration: "0.2s"
-		}
+		// init Isotope
+		var $grid = $(".gallery").isotope({
+			// options
+			itemSelector: ".small-img",
+			stamp: ".big-img",
+			masonry: {
+				gutter: 30,
+				transitionDuration: "0.2s"
+			}
 
-	});
-	// layout Isotope after each image loads
-	$grid.imagesLoaded().progress( function() {
-	  $grid.isotope("layout");
-	});
+		});
+		// layout Isotope after each image loads
+		$grid.imagesLoaded().progress( function() {
+		  $grid.isotope("layout");
+		});
+	}
 
 });
 
@@ -235,85 +210,6 @@ jQuery(document).ready(function($){
 
 });
 
-
-//Whitepaper form
-jQuery(document).ready(function($){
-	"use strict";
-
-	var $wpLeft = $(".whitepaper-left");
-	var $wpRight = $(".whitepaper-right");
-
-	$(".whitepaper-left .whitepaper-button, .whitepaper-left .close").click(function(){
-		overlayToggle($wpLeft);
-	});
-
-	$(".whitepaper-right .whitepaper-button, .whitepaper-right .close").click(function(){
-		overlayToggle($wpRight);
-	});
-
-	var overlayToggle = function($whitepaper) {
-			$whitepaper.toggleClass("form-active");
-	}
-
-	// $(".whitepaper-button").click(function(){
-	// 	$(".whitepaper").toggleClass("form-active");
-	// });
-	// $(".whitepaper .close").click(function(){
-	// 	$(".whitepaper").toggleClass("form-active");
-	// });
-});
-
-//Dropdown
-jQuery(document).ready(function($){
-	$("select").each(function(){
-	    var $this = $(this), numberOfOptions = $(this).children("option").length;
-
-	    $this.addClass("select-hidden");
-	    $this.wrap("<div class=\"select\"></div>");
-	    $this.after("<div class=\"select-styled\"></div>");
-
-	    var $styledSelect = $this.next("div.select-styled");
-	    $styledSelect.text($this.children("option").eq(0).text());
-
-	    var $list = $("<ul />", {
-	        "class": "select-options"
-	    }).insertAfter($styledSelect);
-
-	    for (var i = 0; i < numberOfOptions; i++) {
-	        $("<li />", {
-	            text: $this.children("option").eq(i).text(),
-	            rel: $this.children("option").eq(i).val()
-	        }).appendTo($list);
-	    }
-
-	    var $listItems = $list.children("li");
-
-	    $styledSelect.click(function(e) {
-	        e.stopPropagation();
-	        $("div.select-styled.active").not(this).each(function(){
-	            $(this).removeClass("active").next("ul.select-options").hide();
-	        });
-	        $(this).toggleClass("active").next("ul.select-options").toggle();
-	    });
-
-	    $listItems.click(function(e) {
-	        e.stopPropagation();
-	        $styledSelect.text($(this).text()).removeClass("active");
-	        $this.val($(this).attr("rel"));
-	        $list.hide();
-	        //console.log($this.val());
-	    });
-
-	    $(document).click(function() {
-	        $styledSelect.removeClass("active");
-	        $list.hide();
-	    });
-
-	});
-
-});
-
-
 //***************************//
 //			Plugins
 //***************************//
@@ -384,45 +280,122 @@ jQuery(document).ready(function($){
 	});
 });
 
-
-
-/*$(function() {
+// Hamburger toggle animation
+jQuery(document).ready(function($){
 	"use strict";
-    var $sidebar   = $("#sidebar"),
-        $window    = $(window),
-        offset     = $sidebar.offset(),
-        topPadding = 15;
 
-    $window.scroll(function() {
-        if ($window.scrollTop() > offset.top) {
-            $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding
-            });
-        } else {
-            $sidebar.stop().animate({
-                marginTop: 0
-            });
-        }
-    });
+	$("#ham").click(function(event) {
 
-});*/
+		if ($("#ham").hasClass("open")) {
 
+			//When closing the menu
+			event.preventDefault();
+			$(".menu-wrapper").removeClass("is-visible");
+			$("#ham").removeClass("open");
+			$("#logo, #phone").removeClass("translucent");
+			var scroll = $(window).scrollTop(),
+				vph = $(window).height() / 3 * 2 - 40;
+			if ( (scroll < vph) ) {
+				$(".gradient").css("top", "0rem").css("opacity","1");
+			}
+		}else{
 
-/**
- * Hover on Scroll
- * A jQuery plugin that displays hover affects on mobile during scrolling
- * See www.bencomeau.com/hover-on-scroll for more information
- * https://github.com/bencomeau/hover-on-scroll
- * Version 1.0, October 15 2015
- * by Ben Comeau
- */
+			//When opening the menu
+			event.preventDefault();
+			$(".menu-wrapper").addClass("is-visible");
+			$("#ham").addClass("open");
+			$(".gradient").css("top", "-16rem").css("opacity","0");
+			$("#logo, #phone").addClass("translucent");
 
 
+		}
+	});
 
-/*
- * ScrollToFixed
- * https://github.com/bigspotteddog/ScrollToFixed
- *
- * Copyright (c) 2011 Joseph Cava-Lynch
- * MIT license
- */
+	$(".menu-wrapper>.veil").click(function(event){
+		event.preventDefault();
+		$(".menu-wrapper").removeClass("is-visible");
+		$("#ham").removeClass("open");
+		$(".gradient").css("top", "0rem");
+		$("#logo, #phone").removeClass("translucent");
+	});
+});
+
+//Whitepaper form
+jQuery(document).ready(function($){
+	"use strict";
+
+	var $wpLeft = $(".whitepaper-left");
+	var $wpRight = $(".whitepaper-right");
+
+	$(".whitepaper-left .whitepaper-button, .whitepaper-left .close").click(function(){
+		overlayToggle($wpLeft);
+	});
+
+	$(".whitepaper-right .whitepaper-button, .whitepaper-right .close").click(function(){
+		overlayToggle($wpRight);
+	});
+
+	var overlayToggle = function($whitepaper) {
+			$whitepaper.toggleClass("form-active");
+	}
+});
+
+// scroll to first section
+jQuery(document).ready(function($){
+	"use strict";
+	$(".red-gradient-btn").click(function() {
+		$("html,body").animate({
+			scrollTop: $("#sales-funnel").offset().top},
+			"slow");
+	});
+});
+
+//Dropdown
+jQuery(document).ready(function($){
+	$("select").each(function(){
+	    var $this = $(this), numberOfOptions = $(this).children("option").length;
+
+	    $this.addClass("select-hidden");
+	    $this.wrap("<div class=\"select\"></div>");
+	    $this.after("<div class=\"select-styled\"></div>");
+
+	    var $styledSelect = $this.next("div.select-styled");
+	    $styledSelect.text($this.children("option").eq(0).text());
+
+	    var $list = $("<ul />", {
+	        "class": "select-options"
+	    }).insertAfter($styledSelect);
+
+	    for (var i = 0; i < numberOfOptions; i++) {
+	        $("<li />", {
+	            text: $this.children("option").eq(i).text(),
+	            rel: $this.children("option").eq(i).val()
+	        }).appendTo($list);
+	    }
+
+	    var $listItems = $list.children("li");
+
+	    $styledSelect.click(function(e) {
+	        e.stopPropagation();
+	        $("div.select-styled.active").not(this).each(function(){
+	            $(this).removeClass("active").next("ul.select-options").hide();
+	        });
+	        $(this).toggleClass("active").next("ul.select-options").toggle();
+	    });
+
+	    $listItems.click(function(e) {
+	        e.stopPropagation();
+	        $styledSelect.text($(this).text()).removeClass("active");
+	        $this.val($(this).attr("rel"));
+	        $list.hide();
+	        //console.log($this.val());
+	    });
+
+	    $(document).click(function() {
+	        $styledSelect.removeClass("active");
+	        $list.hide();
+	    });
+
+	});
+
+});

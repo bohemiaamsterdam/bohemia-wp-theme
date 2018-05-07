@@ -5,7 +5,6 @@ function theme_styles() {
 	wp_enqueue_script( 'isotope-layout', 'https://unpkg.com/isotope-layout@3.0.3/dist/isotope.pkgd.min.js', array('jquery'), '3.0.3', true );
 	wp_enqueue_script( 'imagesloaded', 'https://unpkg.com/imagesloaded@4.1.1/imagesloaded.pkgd.min.js', array('jquery'), '4.1.1', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), true);
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/menu.js', array ( 'jquery' ), true);
 	wp_enqueue_script( 'rellax', get_template_directory_uri() . '/js/rellax.min.js', true);
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
@@ -38,11 +37,12 @@ function my_nav_wrap() {
   // the static link
   if($thatpostlink != ''){
   	$wrap .= '<li class=""><a href="' . $thatpostlink .'">'. $thatlanguage . '</a></li>';
-  } else if ($thislanguage == 'Nederlands'){
-	$wrap .= '<li class=""><a href="https://bohemiaamsterdam.com/en">'. $thatlanguage . '</a></li>';
-  } else if ($thislanguage == 'English'){
-	$wrap .= '<li class=""><a href="https://bohemiaamsterdam.com/nl">'. $thatlanguage . '</a></li>';
-  }
+	} 
+  // else if ($thislanguage == 'Nederlands'){
+	// $wrap .= '<li class=""><a href="https://bohemiaamsterdam.com/en">'. $thatlanguage . '</a></li>';
+  // } else if ($thislanguage == 'English'){
+	// $wrap .= '<li class=""><a href="https://bohemiaamsterdam.com/nl">'. $thatlanguage . '</a></li>';
+  // }
   // close the <ul>
   $wrap .= '</ul>';
   // return the result
