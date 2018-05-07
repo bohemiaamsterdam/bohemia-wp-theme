@@ -56,7 +56,7 @@
 					</div>
 
 					<div class="row center-xs rellax" data-rellax-speed="3" data-rellax-percentage="0.3">
-					  <a class="red-gradient-btn" href="#case-studies">Bewijs dat maar eens</a>
+					  <a class="red-gradient-btn" href="#">Bewijs dat maar eens</a>
 					</div>
 			</section>
 

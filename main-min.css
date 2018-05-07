@@ -1702,7 +1702,7 @@ form p, form label, #mc_embed_signup p, #mc_embed_signup label {
 
 form textarea, #mc_embed_signup textarea, form input:not([type=submit]):not([type=radio]):not([type=checkbox]), #mc_embed_signup input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   font-family: "Work Sans", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4375rem;
+  font-size: calc(20px + 3 * ( (100vw - 360px) / 1240));
   font-weight: 400;
   color: transparent;
   width: 100%;
@@ -1714,6 +1714,12 @@ form textarea, #mc_embed_signup textarea, form input:not([type=submit]):not([typ
   border-left: 0;
   outline: none;
   cursor: text; }
+  @media screen and (max-width: 360px) {
+    form textarea, #mc_embed_signup textarea, form input:not([type=submit]):not([type=radio]):not([type=checkbox]), #mc_embed_signup input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
+      font-size: 1.25rem; } }
+  @media screen and (min-width: 1600px) {
+    form textarea, #mc_embed_signup textarea, form input:not([type=submit]):not([type=radio]):not([type=checkbox]), #mc_embed_signup input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
+      font-size: 1.4375rem; } }
 
 form textarea, #mc_embed_signup textarea {
   padding: 0.625rem 0;
@@ -1796,6 +1802,13 @@ form .wpcf7-form-control-wrap input[type=checkbox], form .wpcf7-form-control-wra
   color: rgba(255, 255, 255, 0.5); }
 
 /* scss/atoms/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
 .single-blog .title,
 .single-work h1,
 .single-about h1 {
@@ -1831,13 +1844,7 @@ form .wpcf7-form-control-wrap input[type=checkbox], form .wpcf7-form-control-wra
   padding-top: calc(43px + 30.1 * ( (100vw - 768px) / 432));
   padding-bottom: calc(43px + 30.1 * ( (100vw - 768px) / 432));
   line-height: 1;
-  font-size: calc(100px + 70 * ( (100vw - 768px) / 832));
-  -ms-word-break: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
+  font-size: calc(100px + 70 * ( (100vw - 768px) / 832)); }
   @media screen and (max-width: 768px) {
     .overview-work h1,
     .overview-blog h1,
@@ -1878,13 +1885,7 @@ form .wpcf7-form-control-wrap input[type=checkbox], form .wpcf7-form-control-wra
 h2 {
   padding-top: calc(8.6px + 1.29 * ( (100vw - 768px) / 432));
   padding-bottom: calc(8.6px + 1.29 * ( (100vw - 768px) / 432));
-  line-height: 1;
-  -ms-word-break: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
+  line-height: 1; }
   @media screen and (max-width: 768px) {
     h2 {
       padding-top: 0.5375rem; } }
@@ -1906,12 +1907,8 @@ h4 {
   padding: 1.075rem 0;
   line-height: 1; }
 
-.title h1, .title h2, .title h3, .title h5, .title h6 {
-  font-family: "Work Sans", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.title {
   font-weight: 200; }
-  @media only screen and (min-width: 64rem) {
-    .title h1, .title h2, .title h3, .title h5, .title h6 {
-      font-weight: 100; } }
 
 body.ie.single-blog h1, body.ie.single-blog h2, body.ie.single-blog h3, body.ie.single-blog h4, body.ie.single-blog h5, body.ie.single-blog h6, body.ie.single-blog .title, body.ie.overview-blog h1, body.ie.overview-blog h2, body.ie.overview-blog h3, body.ie.overview-blog h4, body.ie.overview-blog h5, body.ie.overview-blog h6, body.ie.overview-blog .title {
   background: none;
@@ -1996,11 +1993,7 @@ body.ie.overview-work > .hero h1, body.ie.overview-work > .hero h2, body.ie.over
 .single-blog .title,
 .single-work h1,
 .single-about h1 {
-  font-size: calc(56px + 40 * ( (100vw - 200px) / 2360));
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
+  font-size: calc(56px + 40 * ( (100vw - 200px) / 2360)); }
   @media screen and (max-width: 200px) {
     .single-blog .title,
     .single-work h1,
@@ -2511,7 +2504,7 @@ a {
     font-weight: 700; }
   #header #logo {
     font-size: 1.625rem;
-    line-height: 1; }
+    font-family: "Alegreya", Times, "Times New Roman", serif; }
     #header #logo span {
       font-family: "Work Sans", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 1.2rem; }
@@ -3013,26 +3006,30 @@ blockquote > div.row {
         padding-bottom: 6.25rem; } }
     #usps .usp img {
       width: 90%; }
-      @media only screen and (max-width: 75rem) {
+      @media only screen and (max-width: 74.9375rem) {
         #usps .usp img {
           width: 35%;
           display: block;
           margin-left: auto;
           margin-right: auto; } }
     #usps .usp h6 {
-      font-size: calc(20px + 6 * ( (100vw - 360px) / 2200));
+      font-size: calc(20px + 6 * ( (100vw - 360px) / 1560));
+      font-weight: 300;
       line-height: 1.2;
       text-align: left; }
       @media screen and (max-width: 360px) {
         #usps .usp h6 {
           font-size: 1.25rem; } }
-      @media screen and (min-width: 2560px) {
+      @media screen and (min-width: 1920px) {
         #usps .usp h6 {
           font-size: 1.625rem; } }
-      @media only screen and (max-width: 75rem) {
+      @media only screen and (max-width: 74.9375rem) {
         #usps .usp h6 {
           text-align: center;
           margin-bottom: 10%; } }
+      @media only screen and (mid-width: 64rem) {
+        #usps .usp h6 {
+          margin-top: 0.4rem; } }
     #usps .usp button, #usps .usp form input[type=submit], form #usps .usp input[type=submit], #usps .usp #mc_embed_signup input[type=submit], #mc_embed_signup #usps .usp input[type=submit], #usps .usp form input.button, form #usps .usp input.button, #usps .usp #mc_embed_signup input.button, #mc_embed_signup #usps .usp input.button {
       padding-top: calc(56px + 44 * ( (100vw - 360px) / 1560)); }
       @media screen and (max-width: 360px) {
@@ -3482,20 +3479,20 @@ aside form {
     display: none; }
   #whitepapers .form-active h3 {
     font-size: 1.625rem;
-    font-size: calc(26px + 30 * ( (100vw - 360px) / 2200));
-    padding-bottom: calc(23px + 33 * ( (100vw - 360px) / 2200)); }
+    font-size: calc(26px + 14 * ( (100vw - 360px) / 2200));
+    padding-bottom: calc(23px + 17 * ( (100vw - 360px) / 2200)); }
     @media screen and (max-width: 360px) {
       #whitepapers .form-active h3 {
         font-size: 1.625rem; } }
     @media screen and (min-width: 2560px) {
       #whitepapers .form-active h3 {
-        font-size: 3.5rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 360px) {
       #whitepapers .form-active h3 {
         padding-bottom: 1.4375rem; } }
     @media screen and (min-width: 2560px) {
       #whitepapers .form-active h3 {
-        padding-bottom: 3.5rem; } }
+        padding-bottom: 2.5rem; } }
   #whitepapers .form-active .whitepaper-form {
     display: block; }
   #whitepapers .form-active .whitepaper-button {
@@ -3557,7 +3554,8 @@ aside form {
     background-image: linear-gradient(45deg, #0046b4, #46beaf); }
   #testimonials p {
     color: #ffffff;
-    font-size: calc(23px + 41 * ( (100vw - 360px) / 1560)); }
+    font-size: calc(23px + 41 * ( (100vw - 360px) / 1560));
+    font-weight: 200; }
     @media screen and (max-width: 360px) {
       #testimonials p {
         font-size: 1.4375rem; } }

@@ -345,7 +345,7 @@ jQuery(document).ready(function($){
 	"use strict";
 	$(".red-gradient-btn").click(function() {
 		$("html,body").animate({
-			scrollTop: $("#sales-funnel").offset().top},
+			scrollTop: $("#case-studies").offset().top},
 			"slow");
 	});
 });

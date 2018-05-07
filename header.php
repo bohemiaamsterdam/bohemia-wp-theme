@@ -20,7 +20,7 @@
 				a.appendChild(r);
 			})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<?php wp_head();?>
 
 		<!-- Hfreflang etc. -->
@@ -107,7 +107,7 @@
 						<button id="ham"><span></span><span></span><span></span><span></span></button>
 					</div>
 					<div class="col-md-6">
-						<a id="logo" href="<?php echo get_home_url(); ?>"><strong>Bohemia</strong> Amsterdam<br><span>Creative Digital Agency</span></a>
+						<a id="logo" href="<?php echo get_home_url(); ?>"><strong>Bohemia</strong> Amsterdam</a>
 					</div>
 					<div class="col-xs-8 col-md-3">
 						<a href="tel:0031204233555" id="phone">&#43;31 (0)20 42 33 555</a>
