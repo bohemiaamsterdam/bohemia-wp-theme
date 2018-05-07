@@ -203,7 +203,7 @@
 				<div class="row rellax" data-rellax-speed="2" data-rellax-percentage="0.1">
 					<div class="whitepaper whitepaper-left post-item col-md-6">
 						<img src="https://bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/whitepaper-left.jpg" alt="">
-						<span class="close">X</span>
+						<span class="close">&times;</span>
 						<div class="row">
 							<div class="post-item-inner col-xs-12">
 								<div class="col-xs-12 col-lg-10">
@@ -222,7 +222,7 @@
 					</div>
 					<div class="whitepaper whitepaper-right post-item col-md-6">
 						<img src="https://bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/whitepaper-right.jpg" alt="">
-						<span class="close">X</span>
+						<span class="close">&times;</span>
 						<div class="row">
 							<div class="post-item-inner col-xs-12">
 								<div class="col-xs-12 col-lg-10">

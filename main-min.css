@@ -3200,6 +3200,9 @@ form .wpcf7-form-control-wrap .wpcf7-list-item.first .wpcf7-list-item-label {
 form .wpcf7-form-control-wrap input[type=checkbox]:checked ~ .wpcf7-list-item-label, form .wpcf7-form-control-wrap input[type=radio]:checked ~ .wpcf7-list-item-label {
   font-weight: 700;
   color: #46beaf; }
+form div.wpcf7-spam-blocked {
+  border: 0;
+  font-size: 0.85rem; }
 form div.wpcf7-response-output {
   font-family: "Work Sans", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
