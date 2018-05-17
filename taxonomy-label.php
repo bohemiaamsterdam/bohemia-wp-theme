@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- 	The hero image -->
-		<div class="hero container-full" style="background-image: url(<?php bloginfo('template_directory');?>/img/hero_work.jpg)">
+		<div class="hero container-full" style="background-image: url(<?php bloginfo('template_directory');?>/img/hero_clouds.jpg)">
 			<div class="row middle-xs">
 				<div class="col-xs col-sm-11 col-md-9 col-md-offset-1">
 					<div class="row">
@@ -10,7 +10,7 @@
 						</h1>
 					</div>
 					<div class="row">
-						<div class="white-bg col-xs col-sm-7 col-lg-6 col-xlg-5">
+						<div class="col-xs col-sm-7 col-lg-6 col-xlg-5">
 							<?php echo term_description(); ?>
 						</div>
 					</div>
@@ -94,6 +94,6 @@
 						<img src="<?php bloginfo('template_directory');?>/img/ic_arrow_down.svg" alt="Down">
 					</button>
 				</div>
-			</aside>				
+			</aside>
 		</main>
 <?php get_footer(); ?>

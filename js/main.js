@@ -69,27 +69,27 @@ jQuery(document).ready(function($){
 //Gallery masonry init
 jQuery(document).ready(function($){
 	"use strict";
-	if($(".gallery").lenght) {
-		//Add the masonry class to all but first 3
-		$(".gallery>.gallery-item:not(:first-of-type)").addClass("small-img");
-		$(".gallery>.gallery-item:first-of-type").addClass("big-img");
+	var $gal = $(".gallery");
 
-		// init Isotope
-		var $grid = $(".gallery").isotope({
-			// options
-			itemSelector: ".small-img",
-			stamp: ".big-img",
-			masonry: {
-				gutter: 30,
-				transitionDuration: "0.2s"
-			}
+	//Add the masonry class to all but first 3
+	$(".gallery>.gallery-item:not(:first-of-type)").addClass("small-img");
+	$(".gallery>.gallery-item:first-of-type").addClass("big-img");
 
-		});
-		// layout Isotope after each image loads
-		$grid.imagesLoaded().progress( function() {
-		  $grid.isotope("layout");
-		});
-	}
+	// init Isotope
+	var $grid = $gal.isotope({
+		// options
+		itemSelector: ".small-img",
+		stamp: ".big-img",
+		masonry: {
+			gutter: 30,
+			transitionDuration: "0.2s"
+		}
+
+	});
+	// layout Isotope after each image loads
+	$grid.imagesLoaded().progress( function() {
+	  $grid.isotope("layout");
+	});
 
 });
 
@@ -208,6 +208,48 @@ jQuery(document).ready(function($){
 		});
 	}
 
+});
+
+/* Homepage tags scroll by clicking/click-holding a button.
+ * For a faster animation change the last values in the animate() functions.
+ */
+jQuery(document).ready(function($){
+	'use strict';
+	var timeout;
+
+	// button down
+	$('.down').click(function(){
+		var pos = $(".scroll-wrapper").scrollTop();
+		$(".scroll-wrapper").animate({ scrollTop: pos + 30 + "px" },100);
+	});
+
+	$('.down').on('mousedown touchstart', function(){
+		timeout = setInterval(function(){
+			var pos = $(".scroll-wrapper").scrollTop();
+			$(".scroll-wrapper").animate({ scrollTop: pos + 30 + "px" },100);
+		}, 100);
+		return false;
+	});
+
+	// button up
+	$('.up').click(function(){
+		var pos = $(".scroll-wrapper").scrollTop();
+		$(".scroll-wrapper").animate({ scrollTop: pos - 30 + "px" },100);
+	});
+
+	$('.up').on('mousedown touchstart', function(){
+		timeout = setInterval(function(){
+			var pos = $(".scroll-wrapper").scrollTop();
+			$(".scroll-wrapper").animate({ scrollTop: pos - 30 + "px" },100);
+		}, 100);
+		return false;
+	});
+
+	//clear timeout
+	$('.up, .down').on('mouseup mouseleave touchend', function(){
+		clearInterval(timeout);
+		return false;
+	});
 });
 
 //***************************//

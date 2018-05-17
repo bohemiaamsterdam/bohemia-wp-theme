@@ -41,10 +41,12 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 		<!-- <script type="text/javascript" src="https://secure.leadforensics.com/js/139846.js" ></script>
 		<noscript><img alt="" src="https://secure.leadforensics.com/139846.png" style="display:none;" /></noscript> -->
-		<script>
-			if (window.innerWidth > 767) {
-				var rellax = new Rellax('.rellax');
-			}
-		</script>
+		<?php if (is_front_page() ) { ?>
+			<script>
+				if (window.innerWidth > 767) {
+					var rellax = new Rellax('.rellax');
+				}
+			</script>
+	<?php } ?>
 	</body>
 </html>

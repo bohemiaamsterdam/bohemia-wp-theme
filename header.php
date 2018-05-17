@@ -45,7 +45,7 @@
 
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i');
-			@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,700');
+			@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,600');
 		</style>
 		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ff7aa484f44598d638542407c/a692c82ba61ff6cc24d509267.js");</script>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>

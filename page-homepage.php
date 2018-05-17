@@ -71,27 +71,40 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="hashtags-slider rellax" data-rellax-speed="2" data-rellax-percentage="0.2">
-								<div>
-									<h4>#Customer & Sales Journeys</h4>
-									<h4>#Buyer Persona Ontwikkeling</h4>
-									<h4>#Campagnes</h4>
-									<h4>#Communicatiestrategieën</h4>
-									<h4>#Contentontwikkeling</h4>
-								</div>
-								<div>
-									<h4>#Display Advertising</h4>
-									<h4>#Grafisch Design</h4>
-									<h4>#Inboundmarketing</h4>
-									<h4>#Marketingcommunicatie</h4>
-									<h4>#Omnichannel</h4>
-								</div>
-								<div>
-									<h4>#Positionering</h4>
-									<h4>#SEO & SEA Support</h4>
-									<h4>#Social Media Strategieën</h4>
-									<h4>#Videocontent</h4>
-									<h4>#Website-ontwikkeling</h4>
-								</div>
+								<?php
+								// your taxonomy name
+								$tax = 'label';
+
+								// get the terms of taxonomy
+								$terms = get_terms( $tax, $args = array(
+								  	'hide_empty' => false // do not hide empty terms
+								));
+								echo '<div>';
+								// loop through all terms
+								$counter = 0;
+								foreach( $terms as $term ) {
+									$counter++;
+									// Get the term link
+									$term_link = get_term_link( $term );
+
+									if( $term->count > 0 ) { // display link to term archive
+										echo '<h4><a href="' . esc_url( $term_link ) . '">' . $term->name .'</a></h4>';
+										if ($counter % 5 == 0) {
+											echo '</div><div>';
+										}
+									}
+									elseif( $term->count !== 0 ) { // display name
+										echo '' . $term->name .'';
+										if ($counter % 5 == 0) {
+											echo '</div><div>';
+										}
+									}
+									else {
+										$counter--;
+									}
+								}
+								echo '</div>';
+								?>
 							</div>
 						</div>
 					</div>
@@ -105,7 +118,8 @@
 						<h2>Ons succes begint bij jouw Customer Journey</h2>
 					</div>
 					<div class="col-xs-12 col-md-6 rellax" data-rellax-speed="0">
-						<p>Wij zorgen ervoor dat jouw doelgroep jou vindt op het moment dat die jou nodig heeft. Dat doen we door samen met jouw en je team nauwgezet jouw customer journey in kaart te brengen, te verbeteren en te zorgen voor traffic. Dat doen we onder andere succesvol voor klanten als Staatsbosbeheer, Sasma en KONE. <br> In elk niveau van de journey kunnen we je helpen met Attract, Capture en Nurture van jouw (potential) customers. Uiteraard om te komen tot een Close.</p>
+						<p>Wij zorgen ervoor dat jouw doelgroep jou vindt op het moment dat die jou nodig heeft. Dat doen we door samen met jouw en je team nauwgezet de customer journey in kaart te brengen, te verbeteren en te zorgen voor traffic. We ontwikkelden daarvoor het Bohemia Model, <a style="color:#46beaf;" href="https://bohemiaamsterdam.com/nl/ons-model/">een special model met analyses, strategie en stapsgewijze realisatie</a>. Deze hebben we onder andere succesvol ingezet voor klanten als Staatsbosbeheer, Sasma en KONE.</p>
+						<p>In elk niveau van de journey kunnen we je helpen met Attract, Capture en Nurture van jouw (potential) customers. Uiteraard om de conversie te verhogen.</p>
 					</div>
 					<div class="col-xs-12 col-md-6 rellax" data-rellax-speed="2" data-rellax-percentage="0.2">
 						<img src="<?php bloginfo('template_directory');?>/img/sales-funnel_bohemia-asmterdam.png" alt="Sales Funnel - Bohemia Amsterdam">
@@ -212,7 +226,8 @@
 									<div class="row">
 										<div class="col-xs-12 col-sm-8 col-md-10">
 											<div class="whitepaper-form">
-												<?php echo do_shortcode( '[contact-form-7 id="813" title="Downloadable Left"]' ); ?>
+												<?php echo do_shortcode( '[contact-form-7 id="843" title="Downloadable Whitepaper"]' ); ?>
+												<?php //echo do_shortcode( '[contact-form-7 id="632" title="Downloadable and MC"]' ); ?>
 											</div>
 										</div>
 									</div>
@@ -226,12 +241,12 @@
 						<div class="row">
 							<div class="post-item-inner col-xs-12">
 								<div class="col-xs-12 col-lg-10">
-									<h3>Werkboek: Leer jouw Buyer Persona kennen in 5 stappen.</h3>
+									<h3>Werkboek: Buyer Persona Template</h3>
 									<button class="whitepaper-button white-btn">Download</button>
 									<div class="row">
 										<div class="col-xs-12 col-sm-8 col-md-10">
 											<div class="whitepaper-form">
-												<?php echo do_shortcode( '[contact-form-7 id="814" title="Downloadable Right"]' ); ?>
+												<?php echo do_shortcode( '[contact-form-7 id="842" title="Downloadable Werkboek"]' ); ?>
 											</div>
 										</div>
 									</div>
@@ -339,7 +354,8 @@
 					</div>
 					<div class="row center-xs">
 						<div class="col-xs-12 col-sm-5">
-							<?php the_field('contactformulier', get_option('page_on_front')); ?>
+							<?php //the_field('contactformulier', get_option('page_on_front')); ?>
+							<?php echo do_shortcode( '[contact-form-7 id="845" title="Contact form"]' ); ?>
 						</div>
 					</div>
 			</section>

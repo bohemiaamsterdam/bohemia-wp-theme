@@ -1,11 +1,11 @@
 <aside id="sidebar" class="initial-mt col-xs-12 col-sm-4 col-md-3">
-		
+
 
 
 <!-- Newsletter -->
-	<div class="row"> 
-		
-		<?php 
+	<div class="row">
+
+		<?php
 		$downloadable_id = get_field('downloadable');
 		if( $downloadable_id ){ //if there is a downloadable
 			$downloadable_id = $downloadable_id[0];
@@ -23,14 +23,16 @@
 				$downloadable_title = get_the_title( $downloadable_id );
 				$downloadable_text = get_post_field('post_content', $downloadable_id);
 
-				echo ('<span id="downloadable_title" class="hidden">' . $downloadable_title . '</span>');
-				echo ('<span id="downloadable_file_url" class="hidden">' . $downloadable_file_url . '</span>');
-
 				// show downloadable ?>
 				<h4 class="col-xs-12">Downloadable</h4>
 				<p class="col-xs-12"><?php echo $downloadable_text ?></p>
 				<div class="col-xs-12">
-					<?php echo do_shortcode( '[contact-form-7 id="629" title="Downloadable and MC"]' ); ?>
+					<?php echo do_shortcode( '[contact-form-7 id="642" title="Downloadable BlogWork"]' ); ?>
+					<?php // FORLIVE // echo do_shortcode( '[contact-form-7 id="827" title="Downloadable BlogWork"]' ); ?>
+					<script type="text/javascript">
+						document.getElementById('downloadable_title').value="<?php echo $downloadable_title ?>";
+						document.getElementById('downloadable_file_url').value="<?php echo $downloadable_file_url ?>";
+					</script>
 				</div>
 			<?php }
 
@@ -38,40 +40,17 @@
 			<h4 class="col-xs-12">Newsletter</h4>
 			<?php
 				$sb = get_page_by_title( 'Sidebar Newsletter' );
-				$sbpage = get_post($sb); 
+				$sbpage = get_post($sb);
 				$sbtxt = $sbpage->post_content;
 			?>
 			<p class="col-xs-12"><?php echo $sbtxt ?></p>
 			<div class="col-xs-12">
-				<div id="mc_embed_signup">
-					<form action="//bohemiaamsterdam.us2.list-manage.com/subscribe/post?u=ff7aa484f44598d638542407c&amp;id=00529f1a03" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-
-							<div class="mc-field-group">
-								<label for="mce-EMAIL">Email Address<span class="asterisk">*</span></label>
-								<input type="email" value="" name="EMAIL" class="required email type" id="mce-EMAIL">
-							</div>
-							<div class="mc-field-group input-group radio-selector">
-								<ul>
-									<li><input type="radio" value="Director" name="ROLE" id="mce-ROLE-0"><label for="mce-ROLE-0">Director</label></li>
-									<li><input type="radio" value="Manager" name="ROLE" id="mce-ROLE-1"><label for="mce-ROLE-1">Manager</label></li>
-									<li><input type="radio" value="Creative" name="ROLE" id="mce-ROLE-2"><label for="mce-ROLE-2">Creative</label></li>
-								</ul>
-							</div>
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>
-							<div class="clear"><input type="submit" value="sign up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						</div>
-					</form> 
-				</div>
+				<?php echo do_shortcode('[contact-form-7 id="636" title="Newsletter"]'); ?>
+				<?php // FORLIVE // echo do_shortcode('[contact-form-7 id="850" title="Newsletter"]'); ?>
 			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-			<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> 
 		<?php }	?>
 		</div>
-	
+
 <!-- Share -->
 	<div class="row">
 		<h4 class="col-xs-12">Share</h4>
