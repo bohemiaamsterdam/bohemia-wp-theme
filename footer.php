@@ -1,7 +1,25 @@
 <!-- 		Footer -->
 
 		<section id="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.460112635204!2d4.844360116156572!3d52.34393975701398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c0b09a4e4d%3A0x7c946f373496c719!2sBohemia+Amsterdam!5e0!3m2!1sen!2snl!4v1524573191158" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!--The div element for the map -->
+			<a href="https://goo.gl/maps/4GDjS4fSCH32"><div id="mapembbed" style="height:400px; cursor:pointer;"></div>></a>
+
+			<!-- Replace the value of the key parameter with your own API key. -->
+			<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMF6RuvoIbmzTcphIbPk7gxrWljIZNpS0&callback=initMap">
+			</script>
+			<script type="text/javascript">
+			// Initialize and add the map
+			function initMap() {
+			  // The location of Uluru
+			  var uluru = {lat: 52.34391, lng: 4.8466};
+			  // The map, centered at Uluru
+			  var map = new google.maps.Map(
+			      document.getElementById('mapembbed'), {zoom: 12, center: uluru});
+			  // The marker, positioned at Uluru
+			  var marker = new google.maps.Marker({position: uluru, map: map});
+			}
+			</script>
 		</section>
 
 		<footer class="container-full">
@@ -39,8 +57,6 @@
 		</footer>
 		<?php wp_footer(); ?>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-		<!-- <script type="text/javascript" src="https://secure.leadforensics.com/js/139846.js" ></script>
-		<noscript><img alt="" src="https://secure.leadforensics.com/139846.png" style="display:none;" /></noscript> -->
 		<?php if (is_front_page() ) { ?>
 			<script>
 				if (window.innerWidth > 767) {

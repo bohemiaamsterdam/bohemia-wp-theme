@@ -27,8 +27,12 @@
 				<h4 class="col-xs-12">Downloadable</h4>
 				<p class="col-xs-12"><?php echo $downloadable_text ?></p>
 				<div class="col-xs-12">
-					<?php echo do_shortcode( '[contact-form-7 id="642" title="Downloadable BlogWork"]' ); ?>
-					<?php // FORLIVE // echo do_shortcode( '[contact-form-7 id="827" title="Downloadable BlogWork"]' ); ?>
+					<?php if($thislanguage == 'en') { ?>
+					<?php echo do_shortcode( '[contact-form-7 id="697" title="Downloadable BlogWork"]' ); ?>
+					<?php }else{ ?>
+					<?php echo do_shortcode( '[contact-form-7 id="827" title="Downloadable BlogWork"]' ); ?>
+					<?php } ?>
+					<?php // echo do_shortcode( '[contact-form-7 id="642" title="Downloadable BlogWork"]' ); ?>
 					<script type="text/javascript">
 						document.getElementById('downloadable_title').value="<?php echo $downloadable_title ?>";
 						document.getElementById('downloadable_file_url').value="<?php echo $downloadable_file_url ?>";
@@ -45,8 +49,12 @@
 			?>
 			<p class="col-xs-12"><?php echo $sbtxt ?></p>
 			<div class="col-xs-12">
-				<?php echo do_shortcode('[contact-form-7 id="636" title="Newsletter"]'); ?>
-				<?php // FORLIVE // echo do_shortcode('[contact-form-7 id="850" title="Newsletter"]'); ?>
+				<?php if($thislanguage == 'en') { ?>
+				<?php echo do_shortcode( '[contact-form-7 id="700" title="Newsletter"]' ); ?>
+				<?php }else{ ?>
+				<?php echo do_shortcode( '[contact-form-7 id="850" title="Newsletter"]' ); ?>
+				<?php } ?>
+				<?php // echo do_shortcode('[contact-form-7 id="636" title="Newsletter"]'); ?>
 			</div>
 		<?php }	?>
 		</div>

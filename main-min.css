@@ -1520,16 +1520,16 @@ button, form input[type=submit], #mc_embed_signup input[type=submit], form input
   .outline-green:active, .overview-blog main button:active, .overview-blog main form input[type=submit]:active, form .overview-blog main input[type=submit]:active, .overview-blog main #mc_embed_signup input[type=submit]:active, #mc_embed_signup .overview-blog main input[type=submit]:active, .overview-blog main form input.button:active, form .overview-blog main input.button:active, .overview-blog main #mc_embed_signup input.button:active, #mc_embed_signup .overview-blog main input.button:active {
     opacity: .5; }
 
-.red-btn, .single-work button, .single-work form input[type=submit], form .single-work input[type=submit], .single-work #mc_embed_signup input[type=submit], #mc_embed_signup .single-work input[type=submit], .single-work form input.button, form .single-work input.button, .single-work #mc_embed_signup input.button, #mc_embed_signup .single-work input.button,
-.single-about button,
-.single-about form input[type=submit],
-form .single-about input[type=submit],
-.single-about #mc_embed_signup input[type=submit],
-#mc_embed_signup .single-about input[type=submit],
-.single-about form input.button,
-form .single-about input.button,
-.single-about #mc_embed_signup input.button,
-#mc_embed_signup .single-about input.button {
+.red-btn, .single-work main button, .single-work main form input[type=submit], form .single-work main input[type=submit], .single-work main #mc_embed_signup input[type=submit], #mc_embed_signup .single-work main input[type=submit], .single-work main form input.button, form .single-work main input.button, .single-work main #mc_embed_signup input.button, #mc_embed_signup .single-work main input.button,
+.single-about main button,
+.single-about main form input[type=submit],
+form .single-about main input[type=submit],
+.single-about main #mc_embed_signup input[type=submit],
+#mc_embed_signup .single-about main input[type=submit],
+.single-about main form input.button,
+form .single-about main input.button,
+.single-about main #mc_embed_signup input.button,
+#mc_embed_signup .single-about main input.button {
   border-color: transparent;
   -webkit-border-image: -webkit-linear-gradient(90deg, #0046b4, #fa5f69);
   -moz-border-image: -moz-linear-gradient(90deg, #0046b4, #fa5f69);
@@ -1542,31 +1542,31 @@ form .single-about input.button,
   background-image: -ms-linear-gradient(45deg, #0046b4, #fa5f69);
   background-image: linear-gradient(45deg, #0046b4, #fa5f69);
   color: #ffffff !important; }
-  .red-btn:hover, .single-work button:hover, .single-work form input[type=submit]:hover, form .single-work input[type=submit]:hover, .single-work #mc_embed_signup input[type=submit]:hover, #mc_embed_signup .single-work input[type=submit]:hover, .single-work form input.button:hover, form .single-work input.button:hover, .single-work #mc_embed_signup input.button:hover, #mc_embed_signup .single-work input.button:hover,
-  .single-about button:hover,
-  .single-about form input[type=submit]:hover,
-  form .single-about input[type=submit]:hover,
-  .single-about #mc_embed_signup input[type=submit]:hover,
-  #mc_embed_signup .single-about input[type=submit]:hover,
-  .single-about form input.button:hover,
-  form .single-about input.button:hover,
-  .single-about #mc_embed_signup input.button:hover,
-  #mc_embed_signup .single-about input.button:hover {
+  .red-btn:hover, .single-work main button:hover, .single-work main form input[type=submit]:hover, form .single-work main input[type=submit]:hover, .single-work main #mc_embed_signup input[type=submit]:hover, #mc_embed_signup .single-work main input[type=submit]:hover, .single-work main form input.button:hover, form .single-work main input.button:hover, .single-work main #mc_embed_signup input.button:hover, #mc_embed_signup .single-work main input.button:hover,
+  .single-about main button:hover,
+  .single-about main form input[type=submit]:hover,
+  form .single-about main input[type=submit]:hover,
+  .single-about main #mc_embed_signup input[type=submit]:hover,
+  #mc_embed_signup .single-about main input[type=submit]:hover,
+  .single-about main form input.button:hover,
+  form .single-about main input.button:hover,
+  .single-about main #mc_embed_signup input.button:hover,
+  #mc_embed_signup .single-about main input.button:hover {
     background-image: -webkit-linear-gradient(90deg, #0046b4, #fa5f69);
     background-image: -moz-linear-gradient(90deg, #0046b4, #fa5f69);
     background-image: -o-linear-gradient(90deg, #0046b4, #fa5f69);
     background-image: -ms-linear-gradient(90deg, #0046b4, #fa5f69);
     background-image: linear-gradient(90deg, #0046b4, #fa5f69); }
-  .red-btn:active, .single-work button:active, .single-work form input[type=submit]:active, form .single-work input[type=submit]:active, .single-work #mc_embed_signup input[type=submit]:active, #mc_embed_signup .single-work input[type=submit]:active, .single-work form input.button:active, form .single-work input.button:active, .single-work #mc_embed_signup input.button:active, #mc_embed_signup .single-work input.button:active,
-  .single-about button:active,
-  .single-about form input[type=submit]:active,
-  form .single-about input[type=submit]:active,
-  .single-about #mc_embed_signup input[type=submit]:active,
-  #mc_embed_signup .single-about input[type=submit]:active,
-  .single-about form input.button:active,
-  form .single-about input.button:active,
-  .single-about #mc_embed_signup input.button:active,
-  #mc_embed_signup .single-about input.button:active {
+  .red-btn:active, .single-work main button:active, .single-work main form input[type=submit]:active, form .single-work main input[type=submit]:active, .single-work main #mc_embed_signup input[type=submit]:active, #mc_embed_signup .single-work main input[type=submit]:active, .single-work main form input.button:active, form .single-work main input.button:active, .single-work main #mc_embed_signup input.button:active, #mc_embed_signup .single-work main input.button:active,
+  .single-about main button:active,
+  .single-about main form input[type=submit]:active,
+  form .single-about main input[type=submit]:active,
+  .single-about main #mc_embed_signup input[type=submit]:active,
+  #mc_embed_signup .single-about main input[type=submit]:active,
+  .single-about main form input.button:active,
+  form .single-about main input.button:active,
+  .single-about main #mc_embed_signup input.button:active,
+  #mc_embed_signup .single-about main input.button:active {
     background-image: -webkit-linear-gradient(90deg, #0046b4, #fa5f69);
     background-image: -moz-linear-gradient(90deg, #0046b4, #fa5f69);
     background-image: -o-linear-gradient(90deg, #0046b4, #fa5f69);
@@ -1574,7 +1574,7 @@ form .single-about input.button,
     background-image: linear-gradient(90deg, #0046b4, #fa5f69);
     opacity: .8; }
 
-.green-btn, .single-blog button, .single-blog form input[type=submit], form .single-blog input[type=submit], .single-blog #mc_embed_signup input[type=submit], #mc_embed_signup .single-blog input[type=submit], .single-blog form input.button, form .single-blog input.button, .single-blog #mc_embed_signup input.button, #mc_embed_signup .single-blog input.button {
+.green-btn, .single-blog main button, .single-blog main form input[type=submit], form .single-blog main input[type=submit], .single-blog main #mc_embed_signup input[type=submit], #mc_embed_signup .single-blog main input[type=submit], .single-blog main form input.button, form .single-blog main input.button, .single-blog main #mc_embed_signup input.button, #mc_embed_signup .single-blog main input.button {
   border-color: transparent;
   -webkit-border-image: -webkit-linear-gradient(90deg, #0046b4, #46beaf);
   -moz-border-image: -moz-linear-gradient(90deg, #0046b4, #46beaf);
@@ -1587,13 +1587,13 @@ form .single-about input.button,
   background-image: -ms-linear-gradient(45deg, #0046b4, #46beaf);
   background-image: linear-gradient(45deg, #0046b4, #46beaf);
   color: #ffffff !important; }
-  .green-btn:hover, .single-blog button:hover, .single-blog form input[type=submit]:hover, form .single-blog input[type=submit]:hover, .single-blog #mc_embed_signup input[type=submit]:hover, #mc_embed_signup .single-blog input[type=submit]:hover, .single-blog form input.button:hover, form .single-blog input.button:hover, .single-blog #mc_embed_signup input.button:hover, #mc_embed_signup .single-blog input.button:hover {
+  .green-btn:hover, .single-blog main button:hover, .single-blog main form input[type=submit]:hover, form .single-blog main input[type=submit]:hover, .single-blog main #mc_embed_signup input[type=submit]:hover, #mc_embed_signup .single-blog main input[type=submit]:hover, .single-blog main form input.button:hover, form .single-blog main input.button:hover, .single-blog main #mc_embed_signup input.button:hover, #mc_embed_signup .single-blog main input.button:hover {
     background-image: -webkit-linear-gradient(90deg, #0046b4, #46beaf);
     background-image: -moz-linear-gradient(90deg, #0046b4, #46beaf);
     background-image: -o-linear-gradient(90deg, #0046b4, #46beaf);
     background-image: -ms-linear-gradient(90deg, #0046b4, #46beaf);
     background-image: linear-gradient(90deg, #0046b4, #46beaf); }
-  .green-btn:active, .single-blog button:active, .single-blog form input[type=submit]:active, form .single-blog input[type=submit]:active, .single-blog #mc_embed_signup input[type=submit]:active, #mc_embed_signup .single-blog input[type=submit]:active, .single-blog form input.button:active, form .single-blog input.button:active, .single-blog #mc_embed_signup input.button:active, #mc_embed_signup .single-blog input.button:active {
+  .green-btn:active, .single-blog main button:active, .single-blog main form input[type=submit]:active, form .single-blog main input[type=submit]:active, .single-blog main #mc_embed_signup input[type=submit]:active, #mc_embed_signup .single-blog main input[type=submit]:active, .single-blog main form input.button:active, form .single-blog main input.button:active, .single-blog main #mc_embed_signup input.button:active, #mc_embed_signup .single-blog main input.button:active {
     background-image: -webkit-linear-gradient(90deg, #0046b4, #46beaf);
     background-image: -moz-linear-gradient(90deg, #0046b4, #46beaf);
     background-image: -o-linear-gradient(90deg, #0046b4, #46beaf);
@@ -4908,77 +4908,77 @@ h1, h2, h3, h4, h5, h6, .single-blog .title {
       -ms-hyphens: none;
       hyphens: none; } }
 
-.single-blog .title,
-.single-work h1,
-.single-about h1 {
+.single-blog main .title,
+.single-work main h1,
+.single-about main h1 {
   margin-top: 2.5rem;
   padding-top: calc(27.52px + 15.48 * ( (100vw - 768px) / 432));
   padding-bottom: calc(27.52px + 15.48 * ( (100vw - 768px) / 432));
   line-height: 1; }
   @media screen and (max-width: 768px) {
-    .single-blog .title,
-    .single-work h1,
-    .single-about h1 {
+    .single-blog main .title,
+    .single-work main h1,
+    .single-about main h1 {
       padding-top: 1.72rem; } }
   @media screen and (min-width: 1200px) {
-    .single-blog .title,
-    .single-work h1,
-    .single-about h1 {
+    .single-blog main .title,
+    .single-work main h1,
+    .single-about main h1 {
       padding-top: 2.6875rem; } }
   @media screen and (max-width: 768px) {
-    .single-blog .title,
-    .single-work h1,
-    .single-about h1 {
+    .single-blog main .title,
+    .single-work main h1,
+    .single-about main h1 {
       padding-bottom: 1.72rem; } }
   @media screen and (min-width: 1200px) {
-    .single-blog .title,
-    .single-work h1,
-    .single-about h1 {
+    .single-blog main .title,
+    .single-work main h1,
+    .single-about main h1 {
       padding-bottom: 2.6875rem; } }
 
-.overview-work h1,
-.overview-blog h1,
-.overview-about h1,
-.overview-clients h1 {
+.overview-work .hero h1,
+.overview-blog .hero h1,
+.overview-about .hero h1,
+.overview-clients .hero h1 {
   padding-top: calc(27.52px + 15.48 * ( (100vw - 768px) / 432));
   padding-bottom: calc(27.52px + 15.48 * ( (100vw - 768px) / 432));
   line-height: 1;
   font-size: calc(64px + 36 * ( (100vw - 768px) / 832)); }
   @media screen and (max-width: 768px) {
-    .overview-work h1,
-    .overview-blog h1,
-    .overview-about h1,
-    .overview-clients h1 {
+    .overview-work .hero h1,
+    .overview-blog .hero h1,
+    .overview-about .hero h1,
+    .overview-clients .hero h1 {
       padding-top: 1.72rem; } }
   @media screen and (min-width: 1200px) {
-    .overview-work h1,
-    .overview-blog h1,
-    .overview-about h1,
-    .overview-clients h1 {
+    .overview-work .hero h1,
+    .overview-blog .hero h1,
+    .overview-about .hero h1,
+    .overview-clients .hero h1 {
       padding-top: 2.6875rem; } }
   @media screen and (max-width: 768px) {
-    .overview-work h1,
-    .overview-blog h1,
-    .overview-about h1,
-    .overview-clients h1 {
+    .overview-work .hero h1,
+    .overview-blog .hero h1,
+    .overview-about .hero h1,
+    .overview-clients .hero h1 {
       padding-bottom: 1.72rem; } }
   @media screen and (min-width: 1200px) {
-    .overview-work h1,
-    .overview-blog h1,
-    .overview-about h1,
-    .overview-clients h1 {
+    .overview-work .hero h1,
+    .overview-blog .hero h1,
+    .overview-about .hero h1,
+    .overview-clients .hero h1 {
       padding-bottom: 2.6875rem; } }
   @media screen and (max-width: 768px) {
-    .overview-work h1,
-    .overview-blog h1,
-    .overview-about h1,
-    .overview-clients h1 {
+    .overview-work .hero h1,
+    .overview-blog .hero h1,
+    .overview-about .hero h1,
+    .overview-clients .hero h1 {
       font-size: 4rem; } }
   @media screen and (min-width: 1600px) {
-    .overview-work h1,
-    .overview-blog h1,
-    .overview-about h1,
-    .overview-clients h1 {
+    .overview-work .hero h1,
+    .overview-blog .hero h1,
+    .overview-about .hero h1,
+    .overview-clients .hero h1 {
       font-size: 6.25rem; } }
 
 h2 {
@@ -5009,26 +5009,26 @@ h4 {
 .title {
   font-weight: 200; }
 
-body.ie.single-blog h1, body.ie.single-blog h2, body.ie.single-blog h3, body.ie.single-blog h4, body.ie.single-blog h5, body.ie.single-blog h6, body.ie.single-blog .title, body.ie.overview-blog h1, body.ie.overview-blog h2, body.ie.overview-blog h3, body.ie.overview-blog h4, body.ie.overview-blog h5, body.ie.overview-blog h6, body.ie.overview-blog .title {
+body.ie.single-blog main h1, body.ie.single-blog main h2, body.ie.single-blog main h3, body.ie.single-blog main h4, body.ie.single-blog main h5, body.ie.single-blog main h6, body.ie.single-blog main .title, body.ie.overview-blog main h1, body.ie.overview-blog main h2, body.ie.overview-blog main h3, body.ie.overview-blog main h4, body.ie.overview-blog main h5, body.ie.overview-blog main h6, body.ie.overview-blog main .title, body.ie.overview-blog .hero h1, body.ie.overview-blog .hero h2, body.ie.overview-blog .hero h3, body.ie.overview-blog .hero h4, body.ie.overview-blog .hero h5, body.ie.overview-blog .hero h6, body.ie.overview-blog .hero .title {
   background: none;
   color: #46beaf; }
-body.ie.single-work h1, body.ie.single-work h2, body.ie.single-work h3, body.ie.single-work h4, body.ie.single-work h5, body.ie.single-work h6, body.ie.single-work .title, body.ie.single-about h1, body.ie.single-about h2, body.ie.single-about h3, body.ie.single-about h4, body.ie.single-about h5, body.ie.single-about h6, body.ie.single-about .title {
+body.ie.single-work main h1, body.ie.single-work main h2, body.ie.single-work main h3, body.ie.single-work main h4, body.ie.single-work main h5, body.ie.single-work main h6, body.ie.single-work main .title, body.ie.single-about main h1, body.ie.single-about main h2, body.ie.single-about main h3, body.ie.single-about main h4, body.ie.single-about main h5, body.ie.single-about main h6, body.ie.single-about main .title {
   background: none;
   color: #fa5f69; }
-body.ie.single-work .post-item h3, body.ie.single-about .post-item h3 {
+body.ie.single-work main .post-item h3, body.ie.single-about main .post-item h3 {
   color: #ffffff; }
-body.ie.overview-work > .hero h1, body.ie.overview-work > .hero h2, body.ie.overview-work > .hero h3, body.ie.overview-work > .hero h4, body.ie.overview-work > .hero h5, body.ie.overview-work > .hero h6, body.ie.overview-work > .hero .title, body.ie.overview-about > .hero h1, body.ie.overview-about > .hero h2, body.ie.overview-about > .hero h3, body.ie.overview-about > .hero h4, body.ie.overview-about > .hero h5, body.ie.overview-about > .hero h6, body.ie.overview-about > .hero .title, body.ie.overview-clients > .hero h1, body.ie.overview-clients > .hero h2, body.ie.overview-clients > .hero h3, body.ie.overview-clients > .hero h4, body.ie.overview-clients > .hero h5, body.ie.overview-clients > .hero h6, body.ie.overview-clients > .hero .title {
+body.ie.overview-work main > .hero h1, body.ie.overview-work main > .hero h2, body.ie.overview-work main > .hero h3, body.ie.overview-work main > .hero h4, body.ie.overview-work main > .hero h5, body.ie.overview-work main > .hero h6, body.ie.overview-work main > .hero .title, body.ie.overview-about main > .hero h1, body.ie.overview-about main > .hero h2, body.ie.overview-about main > .hero h3, body.ie.overview-about main > .hero h4, body.ie.overview-about main > .hero h5, body.ie.overview-about main > .hero h6, body.ie.overview-about main > .hero .title, body.ie.overview-clients main > .hero h1, body.ie.overview-clients main > .hero h2, body.ie.overview-clients main > .hero h3, body.ie.overview-clients main > .hero h4, body.ie.overview-clients main > .hero h5, body.ie.overview-clients main > .hero h6, body.ie.overview-clients main > .hero .title {
   background: none;
   color: #fa5f69; }
 
-.single-blog h1, .single-blog h2, .single-blog h3, .single-blog h4, .single-blog h5, .single-blog h6, .single-blog .title,
-.overview-blog h1,
-.overview-blog h2,
-.overview-blog h3,
-.overview-blog h4,
-.overview-blog h5,
-.overview-blog h6,
-.overview-blog .title {
+.single-blog main h1, .single-blog main h2, .single-blog main h3, .single-blog main h4, .single-blog main h5, .single-blog main h6, .single-blog main .title,
+.overview-blog .hero h1,
+.overview-blog .hero h2,
+.overview-blog .hero h3,
+.overview-blog .hero h4,
+.overview-blog .hero h5,
+.overview-blog .hero h6,
+.overview-blog .hero .title {
   background: -webkit-linear-gradient(45deg, #0046b4, #46beaf);
   background: -moz-linear-gradient(45deg, #0046b4, #46beaf);
   background: -o-linear-gradient(45deg, #0046b4, #46beaf);
@@ -5040,35 +5040,35 @@ body.ie.overview-work > .hero h1, body.ie.overview-work > .hero h2, body.ie.over
   text-fill-color: transparent;
   display: inline-block; }
 
-.single-work h1, .single-work h2, .single-work h3, .single-work h4, .single-work h5, .single-work h6, .single-work .title,
-.single-about h1,
-.single-about h2,
-.single-about h3,
-.single-about h4,
-.single-about h5,
-.single-about h6,
-.single-about .title,
-.overview-work h1,
-.overview-work h2,
-.overview-work h3,
-.overview-work h4,
-.overview-work h5,
-.overview-work h6,
-.overview-work .title,
-.overview-about h1,
-.overview-about h2,
-.overview-about h3,
-.overview-about h4,
-.overview-about h5,
-.overview-about h6,
-.overview-about .title,
-.overview-clients h1,
-.overview-clients h2,
-.overview-clients h3,
-.overview-clients h4,
-.overview-clients h5,
-.overview-clients h6,
-.overview-clients .title {
+.single-work main h1, .single-work main h2, .single-work main h3, .single-work main h4, .single-work main h5, .single-work main h6, .single-work main .title,
+.single-about main h1,
+.single-about main h2,
+.single-about main h3,
+.single-about main h4,
+.single-about main h5,
+.single-about main h6,
+.single-about main .title,
+.overview-work .hero h1,
+.overview-work .hero h2,
+.overview-work .hero h3,
+.overview-work .hero h4,
+.overview-work .hero h5,
+.overview-work .hero h6,
+.overview-work .hero .title,
+.overview-about .hero h1,
+.overview-about .hero h2,
+.overview-about .hero h3,
+.overview-about .hero h4,
+.overview-about .hero h5,
+.overview-about .hero h6,
+.overview-about .hero .title,
+.overview-clients .hero h1,
+.overview-clients .hero h2,
+.overview-clients .hero h3,
+.overview-clients .hero h4,
+.overview-clients .hero h5,
+.overview-clients .hero h6,
+.overview-clients .hero .title {
   background: -webkit-linear-gradient(45deg, #0046b4, #fa5f69);
   background: -moz-linear-gradient(45deg, #0046b4, #fa5f69);
   background: -o-linear-gradient(45deg, #0046b4, #fa5f69);
@@ -5080,7 +5080,7 @@ body.ie.overview-work > .hero h1, body.ie.overview-work > .hero h2, body.ie.over
   text-fill-color: transparent;
   display: inline-block; }
 
-.single-blog h1 {
+.single-blog main h1 {
   font-weight: 600;
   font-size: 1.4375rem;
   line-height: 1.4;
@@ -5089,36 +5089,36 @@ body.ie.overview-work > .hero h1, body.ie.overview-work > .hero h2, body.ie.over
   margin: 0;
   display: inline-block; }
 
-.single-blog .title,
-.single-work h1,
-.single-about h1 {
+.single-blog main .title,
+.single-work main h1,
+.single-about main h1 {
   font-size: calc(56px + 40 * ( (100vw - 200px) / 2360)); }
   @media screen and (max-width: 200px) {
-    .single-blog .title,
-    .single-work h1,
-    .single-about h1 {
+    .single-blog main .title,
+    .single-work main h1,
+    .single-about main h1 {
       font-size: 3.5rem; } }
   @media screen and (min-width: 2560px) {
-    .single-blog .title,
-    .single-work h1,
-    .single-about h1 {
+    .single-blog main .title,
+    .single-work main h1,
+    .single-about main h1 {
       font-size: 6rem; } }
 
-.single-blog h2,
-.single-work h2,
-.single-about h2 {
+.single-blog main h2,
+.single-work main h2,
+.single-about main h2 {
   font-size: calc(48px + 32 * ( (100vw - 200px) / 2360));
   padding-top: 1.505rem;
   padding-bottom: 1.505rem; }
   @media screen and (max-width: 200px) {
-    .single-blog h2,
-    .single-work h2,
-    .single-about h2 {
+    .single-blog main h2,
+    .single-work main h2,
+    .single-about main h2 {
       font-size: 3rem; } }
   @media screen and (min-width: 2560px) {
-    .single-blog h2,
-    .single-work h2,
-    .single-about h2 {
+    .single-blog main h2,
+    .single-work main h2,
+    .single-about main h2 {
       font-size: 5rem; } }
 
 h3 {
@@ -5883,7 +5883,7 @@ a {
 
 @media only screen and (min-width: 48rem) {
   .menu-container {
-    width: 27.5rem; } }
+    width: 34rem; } }
 /*@media only screen and (min-width: 1170px)
  * .menu-container
  * 	width: 440px */
@@ -7095,16 +7095,16 @@ figure {
 .meta {
   margin-bottom: 2.5rem; }
 
-.single-work aside p,
-.single-about aside p {
+.single-work main aside p,
+.single-about main aside p {
   color: #fa5f69; }
-.single-work aside svg,
-.single-about aside svg {
+.single-work main aside svg,
+.single-about main aside svg {
   fill: #fa5f69; }
 
-.single-blog aside p {
+.single-blog main aside p {
   color: #46beaf; }
-.single-blog aside svg {
+.single-blog main aside svg {
   fill: #46beaf; }
 
 /* scss/templates/_overview-clients.scss */

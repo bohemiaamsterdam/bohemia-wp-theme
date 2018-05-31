@@ -1,7 +1,10 @@
 <?php
 //Load CSS and scripts
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 function theme_styles() {
-	wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/style.css', array(), '1.2.1', false, 'all' );
+	wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/style.css', array(), '1.2.4', false, 'all' );
 	wp_enqueue_script( 'isotope-layout', 'https://unpkg.com/isotope-layout@3.0.3/dist/isotope.pkgd.min.js', array('jquery'), '3.0.3', true );
 	wp_enqueue_script( 'imagesloaded', 'https://unpkg.com/imagesloaded@4.1.1/imagesloaded.pkgd.min.js', array('jquery'), '4.1.1', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), true);

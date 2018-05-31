@@ -8,21 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><?php wp_title(' | ',TRUE,'right'); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<!-- Hotjar Tracking Code for http://bohemiaamsterdam.com -->
-		<script>
-			(function(h,o,t,j,a,r){
-				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-				h._hjSettings={hjid:207300,hjsv:5};
-				a=o.getElementsByTagName('head')[0];
-				r=o.createElement('script');r.async=1;
-				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-				a.appendChild(r);
-			})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<?php wp_head();?>
-
 		<!-- Hfreflang etc. -->
 		<?php
 			$thispost = get_the_ID();
@@ -74,7 +61,6 @@
 		else : echo '<body>';
 		endif;
 	?>
-
  		<!-- Clipping SVG for the Footer -->
 		<svg class="clip-svg">
 		  <defs>
@@ -87,7 +73,7 @@
 
 <!-- 	The hidden menu -->
 	   	<nav class="menu-wrapper">
-			<div class="menu-container">
+			<div class="menu-container" style="width:33rem;">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'my-custom-menu',

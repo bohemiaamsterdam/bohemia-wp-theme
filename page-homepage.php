@@ -165,7 +165,7 @@
 											<?php
 												$terms = wp_get_object_terms( $post->ID, 'label' );
 												echo '<ul>';
-												foreach( array_slice($terms,0,3) as $term ):
+												foreach( array_slice($terms,0,4) as $term ):
 													echo '<li>' . $term->name . '</li>';
 												endforeach;
 												echo '</ul>';
@@ -222,11 +222,15 @@
 							<div class="post-item-inner col-xs-12">
 								<div class="col-xs-12 col-lg-10">
 									<h3>Whitepaper: Hoe ontwikkel je de perfecte Customer Journey?</h3>
-									<button class="whitepaper-button white-btn">Download</button>
+									<button class="whitepaper-button white-btn" data-title="Whitepaper: Hoe ontwikkel je de perfecte Customer Journey?">Download</button>
 									<div class="row">
 										<div class="col-xs-12 col-sm-8 col-md-10">
 											<div class="whitepaper-form">
+												<?php if($thislanguage == 'en') { ?>
+												<?php echo do_shortcode( '[contact-form-7 id="699" title="Downloadable Whitepaper"]' ); ?>
+												<?php }else{ ?>
 												<?php echo do_shortcode( '[contact-form-7 id="843" title="Downloadable Whitepaper"]' ); ?>
+												<?php } ?>
 												<?php //echo do_shortcode( '[contact-form-7 id="632" title="Downloadable and MC"]' ); ?>
 											</div>
 										</div>
@@ -242,11 +246,15 @@
 							<div class="post-item-inner col-xs-12">
 								<div class="col-xs-12 col-lg-10">
 									<h3>Werkboek: Buyer Persona Template</h3>
-									<button class="whitepaper-button white-btn">Download</button>
+									<button class="whitepaper-button white-btn" data-title="Werkboek: Buyer Persona Template">Download</button>
 									<div class="row">
 										<div class="col-xs-12 col-sm-8 col-md-10">
 											<div class="whitepaper-form">
+												<?php if($thislanguage == 'en') { ?>
+												<?php echo do_shortcode( '[contact-form-7 id="698" title="Downloadable Werkboek"]' ); ?>
+												<?php }else{ ?>
 												<?php echo do_shortcode( '[contact-form-7 id="842" title="Downloadable Werkboek"]' ); ?>
+												<?php } ?>
 											</div>
 										</div>
 									</div>
@@ -354,8 +362,8 @@
 					</div>
 					<div class="row center-xs">
 						<div class="col-xs-12 col-sm-5">
-							<?php //the_field('contactformulier', get_option('page_on_front')); ?>
-							<?php echo do_shortcode( '[contact-form-7 id="845" title="Contact form"]' ); ?>
+							<?php the_field('contactformulier', get_option('page_on_front')); ?>
+							<?php //echo do_shortcode( '[contact-form-7 id="845" title="Contact form"]' ); ?>
 						</div>
 					</div>
 			</section>
